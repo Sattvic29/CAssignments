@@ -22,7 +22,7 @@ int main(int argc, char* argv[], char* envp[])
 	printf("Enter Another Integer Number : \n\n");
 	scanf("%d", &iNum_02);
 
-	iResult MAX_NUMBER(iNum_01, iNum_02);
+	iResult = MAX_NUMBER(iNum_01, iNum_02);
 	printf("\n\n");
 	printf("Result Of Macro Function MAX_NUMBER() = %d\n", iResult);
 

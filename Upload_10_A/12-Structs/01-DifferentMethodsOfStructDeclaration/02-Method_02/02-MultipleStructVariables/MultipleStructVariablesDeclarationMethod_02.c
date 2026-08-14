@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+//Defining Struct
+struct MyPoint
+{
+	int x;
+	int y;
+};
+
+struct MyPoint point_a, point_b, point_c, point_d, point_e;
+
+int main(void)
+{
+	//code
+
+	//point_a
+	point_a.x = 1;
+	point_a.y = 2;
+
+	//point_b
+	point_b.x = 3;
+	point_b.y = 4;
+
+	//point_c
+	point_c.x = 5;
+	point_c.y = 6;
+
+	//point_d
+	point_d.x = 7;
+	point_d.y = 8;
+
+	//point_e
+	point_e.x = 9;
+	point_e.y = 10;
+
+	//Displyaing values
+	printf("\n\n");
+	printf("Co-ordinates (x, y) Of Point 'A' Are : (%d, %d)\n\n", point_a.x, point_a.y);
+	printf("Co-ordinates (x, y) Of Point 'B' Are : (%d, %d)\n\n", point_b.x, point_b.y);
+	printf("Co-ordinates (x, y) Of Point 'C' Are : (%d, %d)\n\n", point_c.x, point_c.y);
+	printf("Co-ordinates (x, y) Of Point 'D' Are : (%d, %d)\n\n", point_d.x, point_d.y);
+	printf("Co-ordinates (x, y) Of Point 'E' Are : (%d, %d)\n\n", point_e.x, point_e.y);
+
+	return(0);
+}
