@@ -17,10 +17,10 @@ int main(void)
 	printf("Size Of Two Dimensional (2D) Integer Array Is = %d\n\n", iArray_size);
 
 	iArray_num_rows = iArray_size / sizeof(iArray[0]);
-	printf("Number Of Rows In Two Dimensional (2D) Integer Array Is : \n\n", iArray_num_rows);
+	printf("Number Of Rows In Two Dimensional (2D) Integer Array Is : %d\n\n", iArray_num_rows);
 
 	iArray_num_columns = sizeof(iArray[0]) / int_size;
-	printf("Number Of Columns In Two Dimensional (2D) Integer Array Is : \n\n", iArray_num_columns);
+	printf("Number Of Columns In Two Dimensional (2D) Integer Array Is : %d\n\n", iArray_num_columns);
 
 	printf("\n\n");
 	printf("Elements In The 2D Array : \n\n");
