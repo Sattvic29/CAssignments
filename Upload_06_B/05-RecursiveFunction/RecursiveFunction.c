@@ -26,7 +26,7 @@ int main(int argc, char* argv[], char* envp[])
 void recursive(unsigned int n)
 {
 	//code
-	printf("n = %d", n);
+	printf("n = %d\n", n);
 
 	if (n > 0)
 	{
