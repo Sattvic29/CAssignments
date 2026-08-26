@@ -135,13 +135,15 @@ int main(void)
 	
 	//Double Array
 	printf("\n\n");
-	printf("The Double Array Entered By You And Consisting Of %d Elements Is As Follows : \n\n", charArrayLength);
-	for (i = 0; i < charArrayLength; i++)
+	printf("The Double Array Entered By You And Consisting Of %d Elements Is As Follows : \n\n", doubleArrayLength);
+	for (i = 0; i < doubleArrayLength; i++)
 		printf("%lf \t At Adsress : %p\n", *(ptr_dArray + i), (ptr_dArray + i));
 
 	//Charcter Array
 	printf("\n\n");
-	printf("The Character Array Entered By You And Consisting Of %d Elements Is As Follows : \n\n", *(ptr_cArray + i), (ptr_cArray + i));
+	printf("The Character Array Entered By You And Consisting Of %d Elements Is As Follows : \n\n", charArrayLength);
+	for (i = 0; i < charArrayLength; i++)
+		printf("%c \t At Adress : %p\n", *(ptr_cArray + i), (ptr_cArray + i));
 
 	//Freeing Memory Occupied By Arrays Allocation
 	if (ptr_cArray)
