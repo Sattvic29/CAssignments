@@ -52,9 +52,9 @@ int main(void)
     //Displaying sizes
     printf("\n\n");
     printf("SIZE OF DATA MEMBERS OF 'struct MyData' ARE : \n\n");
-    printf("Size of ‘i' = %d bytes\n", i_size);
-    printf("Size of ‘f' = %d bytes\n", f_size);
-    printf("Size of ‘d' = %d bytes\n", d_size);
+    printf("Size of 'i' = %d bytes\n", i_size);
+    printf("Size of 'f' = %d bytes\n", f_size);
+    printf("Size of 'd' = %d bytes\n", d_size);
 
     //Calculating size
     struct_MyData_size = sizeof(struct MyData);
@@ -62,7 +62,7 @@ int main(void)
 
     //Displaying size
     printf("\n\n");
-    printf("Size of ‘struct MyData' : %d bytes\n\n", struct_MyData_size);
+    printf("Size of 'struct MyData' : %d bytes\n\n", struct_MyData_size);
     printf("Size of pointer to 'struct MyData' : %d bytes\n\n", pointer_to_struct_MyData_size);
 
     if (pData)

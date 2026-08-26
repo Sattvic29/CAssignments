@@ -11,7 +11,11 @@ int main(int argc, char* argv[], char* envp[])
 	{
 		printf("\n\n");
 		printf("Invalid Usage !!! Exitting Now...\n\n");
+<<<<<<< HEAD
 		printf("Usage : CommandLineArgumentsApplication   Satvik Vijay Nagare\n\n");
+=======
+		printf("Usage : CommandLineArgumentsApplication   Satvik Vijay Nagare \n\n");
+>>>>>>> f446c47 (Added new assignments)
 		exit(0);
 	}
 

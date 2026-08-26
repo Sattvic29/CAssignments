@@ -31,24 +31,29 @@ int main(void)
 	printf("iArray[0][1] = %d\n", iArray[0][1]);
 	printf("iArray[0][2] = %d\n", iArray[0][2]);
 
+	//Row 2
 	printf("\n\n");
 	printf("*****ROW 2*****\n");
 	printf("iArray[1][0] = %d\n", iArray[1][0]);
 	printf("iArray[1][1] = %d\n", iArray[1][1]);
 	printf("iArray[]1[2] = %d\n", iArray[1][2]);
 
+	//Row 3
 	printf("\n\n");
 	printf("*****ROW 3*****\n");
 	printf("iArray[2][0] = %d\n", iArray[2][0]);
 	printf("iArray[2][1] = %d\n", iArray[2][1]);
 	printf("iArray[2][2] = %d\n", iArray[2][2]);
 
+	//Row 4
 	printf("\n\n");
 	printf("*****ROW 4*****\n");
 	printf("iArray[3][0] = %d\n", iArray[3][0]);
 	printf("iArray[3][1] = %d\n", iArray[3][1]);
 	printf("iArray[3][2] = %d\n", iArray[3][2]);
 
+
+	//Row 5
 	printf("\n\n");
 	printf("*****ROW 5*****\n");
 	printf("iArray[4][0] = %d\n", iArray[4][0]);
