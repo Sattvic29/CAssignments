@@ -13,7 +13,7 @@ int main(void)
 	{
 		for (j = 1; j <= 20; j++)
 		{
-			if (j > 1)
+			if (j > i)
 			{
 				break;
 			}
