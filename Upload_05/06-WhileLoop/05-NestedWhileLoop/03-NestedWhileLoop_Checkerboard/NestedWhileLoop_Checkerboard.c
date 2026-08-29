@@ -14,10 +14,10 @@ int main(void)
 		j = 0;
 		while (j < 64)
 		{
-			c = ((i & 0x8 == 0) ^ (j & 0x8) == 0);
+			c = ((i & 0x8) == 0) ^ ((j & 0x8) == 0);
 
 			if (c == 0)
-				printf(" ");
+				printf("  ");
 
 			if (c == 1)
 				printf("* ");

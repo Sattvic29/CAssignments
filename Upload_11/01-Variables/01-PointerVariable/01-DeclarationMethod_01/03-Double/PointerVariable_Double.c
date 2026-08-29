@@ -22,7 +22,7 @@ int main(void)
 	printf("*****AFTER ptr*****\n\n");
 	printf("Value Of 'd'              = %lf\n\n", d);
 	printf("Address Of 'd'            = %p\n\n", ptr);
-	printf("Value At Address Of 'num' = %lf\n\n", *ptr);
+	printf("Value At Address Of 'd' = %lf\n\n", *ptr);
 
 	return(0);
 }

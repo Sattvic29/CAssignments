@@ -17,29 +17,36 @@ int main(void)
 	printf("Enter Number Of Columns : ");
 	scanf("%d", &num_columns);
 
-	//Allocating Memory To 1D Array
 	printf("\n\n");
 	printf("*****MEMORY ALLOCATION TO 2D INTEGER ARRAY*****\n\n");
+
 	ptr_iArray = (int**)malloc(num_rows * sizeof(int*));
+
 	if (ptr_iArray == NULL)
 	{
-		printf("FAILED TO ALLOCATE MEMORY OF 2D INTEGER ARRAY!!! EXITTING NOW...\n\n");
+		printf("FAILED TO ALLOCATE MEMORY TO %d ROWS OF 2D INTEGER ARRAY!!! EXITING NOW...\n\n", num_rows);
 		exit(0);
 	}
 	else
-		printf("MEMORY ALLOCATION OF 2D INTEGER ARRAY SUCCEEDED!!!");
+	{
+		printf("MEMORY ALLOCATION TO %d ROWS OF 2D INTEGER ARRAY SUCCEEDED!!!\n\n", num_rows);
+	}
 
 	for (i = 0; i < num_rows; i++)
 	{
 		ptr_iArray[i] = (int*)malloc(num_columns * sizeof(int));
+
 		if (ptr_iArray[i] == NULL)
 		{
-			printf("FAILED TO ALLOCATE MEMORY OF 2D INTEGER ARRAY!!!EXITTING NOW...\n\n");
+			printf("FAILED TO ALLOCATE MEMORY TO COLUMNS OF ROW %d OF 2D INTEGER ARRAY !!! EXITING NOW...\n\n", i);
 			exit(0);
 		}
 		else
-			printf("MEMORY ALLOCATION OF 2D INTEGER ARRAY SUCCEDED !!!\n\n");
+		{
+			printf("MEMORY ALLOCATION TO COLUMNS OF ROW %d OF 2D INTEGER ARRAY SUCCEEDED !!!\n\n", i);
+		}
 	}
+
 	for (i = 0; i < num_rows; i++)
 	{
 		for (j = 0; j < num_columns; j++)
@@ -50,27 +57,31 @@ int main(void)
 
 	for (i = 0; i < num_rows; i++)
 	{
-		printf("Base Address Of Row %d : ptr_iArray[%d] = %p\n", i, i, ptr_iArray[i], &ptr_iArray[i]);
+		printf("Base Address Of Row %d : ptr_iArray[%d] = %p \t At Address : %p\n",
+			i, i, ptr_iArray[i], &ptr_iArray[i]);
 	}
+
 	printf("\n\n");
 
 	for (i = 0; i < num_rows; i++)
 	{
 		for (j = 0; j < num_columns; j++)
 		{
-				printf("ptr_iArray[%d][%d] = %d \t At Address : %p\n", i, j, ptr_iArray[i][j], &ptr_iArray[i][j]);
+			printf("ptr_iArray[%d][%d] = %d \t At Address : %p\n",
+				i, j, ptr_iArray[i][j], &ptr_iArray[i][j]);
 		}
-	}
-	printf("\n\n");
 
-	//Freeing Memory
+		printf("\n");
+	}
+
 	for (i = (num_rows - 1); i >= 0; i--)
 	{
 		if (ptr_iArray[i])
 		{
 			free(ptr_iArray[i]);
 			ptr_iArray[i] = NULL;
-			printf("MEMORY ALLOCATED HAS BEEN SUCCEDFULLY FREED!!!\n\n");
+
+			printf("MEMORY ALLOCATED TO ROW %d HAS BEEN SUCCESSFULLY FREED !!!\n\n", i);
 		}
 	}
 
@@ -78,7 +89,8 @@ int main(void)
 	{
 		free(ptr_iArray);
 		ptr_iArray = NULL;
-		printf("MEMORY ALLOCATED TO ptr_iArray HAS BEEN SUCCESFULLY FREED!!!\n\n");
+
+		printf("MEMORY ALLOCATED TO ptr_iArray HAS BEEN SUCCESSFULLY FREED !!!\n\n");
 	}
 
 	return(0);
