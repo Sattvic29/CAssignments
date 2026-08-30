@@ -4,7 +4,7 @@ int main(void)
 {
 	//variable declarations
 	char ch;
-	char *ptr = NULL;
+	char* ptr = NULL;
 
 	//code
 	ch = 'A';
