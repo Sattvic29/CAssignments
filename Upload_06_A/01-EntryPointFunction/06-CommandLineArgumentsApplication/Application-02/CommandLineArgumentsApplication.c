@@ -11,7 +11,6 @@ int main(int argc, char* argv[], char* envp[])
 	{
 		printf("\n\n");
 		printf("Invalid Usage !!! Exitting Now...\n\n");
-
 		printf("Usage : CommandLineArgumentsApplication  Satvik Vijay Nagare \n\n");
 		exit(0);
 	}
