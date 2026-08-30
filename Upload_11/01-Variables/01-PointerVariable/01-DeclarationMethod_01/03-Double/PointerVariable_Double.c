@@ -4,7 +4,7 @@ int main(void)
 {
 	//variable declarations
 	double d;
-	double *ptr = NULL;
+	double* ptr = NULL;
 
 	//code
 	d = 4.346457;
